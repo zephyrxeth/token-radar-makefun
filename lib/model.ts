@@ -288,6 +288,7 @@ export function radarRow(row: BoardRow): RadarRow {
     age_days: row.age_days,
     implied_value_usd: row.implied_value_usd,
     growth_multiplier: row.model.growth_multiplier,
+    farm_steps: row.farm_steps,
     maturity_multiplier: row.model.maturity_multiplier,
   };
 }

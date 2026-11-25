@@ -302,7 +302,7 @@
     state.selected = slug;
     writeHash();
     dialog.textContent = '';
-    var steps = farmSteps(row);
+    var steps = row.farm_steps || farmSteps(row);
     dialog.appendChild(el('div', { class: 'detail-head' },
       el('div', null,
         el('span', { class: 'brand-name', text: 'Rank ' + row.rank + ' of ' + DATA.board_size }),
